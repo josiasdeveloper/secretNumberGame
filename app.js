@@ -36,7 +36,7 @@ function showText(tag, text)
 
 function randomNumber()
 {
-    let choosenNumber = parseInt(Math.random() * 10 + 1);
+    let choosenNumber = parseInt(Math.random() * 100 + 1);
     let qtd = numbersList.length;
     if (numbersList.length == 3)
     {
@@ -59,11 +59,11 @@ function reloadGame()
     secretNumber = randomNumber();
     count = 1;
     showText('h1','Secret number game' );
-    showText('p', 'Choose a number between 1 and 10');
+    showText('p', 'Choose a number between 1 and 100');
 }
 
 showText('h1','Secret number game' );
-showText('p', 'Choose a number between 1 and 10');
+showText('p', 'Choose a number between 1 and 100');
 
 let numbersList = [];
 let secretNumber = randomNumber();
